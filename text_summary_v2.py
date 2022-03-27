@@ -68,6 +68,8 @@ i = 0
 curr_score = 0
 vendor_name = ""
 
+
+
 # Store vendor's total sentence scores in a dictionary
 vendor_scores = {}
 
@@ -95,6 +97,12 @@ for sent in sentence_scores:
 sorted_vendor_scores = sorted(vendor_scores.items(), key=lambda x: x[1], reverse=True)
 
 
+# Print out sentence scores in detail
+print ("Detailed sentence scores")
+for sent in sentence_scores:
+    print(sent, sentence_scores[sent])
+
+print ("Vendor's total scores")
 # Print sorted vendor scores out for import into a CSV file
 for i in sorted_vendor_scores:
        print (re.sub('-', '', i[0]), ",", i[1])
