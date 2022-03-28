@@ -107,7 +107,7 @@ print ("Vendor's total scores")
 for i in sorted_vendor_scores:
        print (re.sub('-', '', i[0]), ",", i[1])
 
-# End program
+#  End program
 
 ## Input format, remove leading #s
 
